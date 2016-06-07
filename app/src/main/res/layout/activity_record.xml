@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/pp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_shan"
+            android:layout_width="5dp"
+            android:layout_height="5dp" />
+
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/sufaceviewre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pp" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/pp"
+        android:layout_margin="15dp"
+        android:background="@mipmap/record_back" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/btn_start"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@mipmap/record_delete" />
+
+    <ImageView
+        android:id="@+id/iv_switch_camera"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/iv_switch_promt"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:src="@mipmap/camera_switch" />
+
+    <ImageView
+        android:id="@+id/iv_switch_promt"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/switch_prompt_selector" />
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/refresh_prompt"
+        android:text="描述一下你的经历"
+        android:textColor="@color/white"
+        android:background="@mipmap/rect_graybg_round"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/switch_record_selector" />
+
+    <Button
+        android:id="@+id/btn_complete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pp"
+        android:layout_margin="15dp"
+        android:background="@mipmap/record_ok" />
+
+
+</RelativeLayout>

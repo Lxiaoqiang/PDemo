@@ -14,7 +14,8 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 
-import xdemo.xq.com.xdemo.R;
+import rxjava.xq.com.pdemo.R;
+
 
 /**
  * Created by lhq on 2016/3/22.

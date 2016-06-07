@@ -11,7 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.Scroller;
 import android.widget.TextView;
 
-import xdemo.xq.com.xdemo.R;
+import rxjava.xq.com.pdemo.R;
 
 
 public class SlideView extends LinearLayout {

@@ -4,7 +4,6 @@ import java.util.Comparator;
 
 /**
  * 
- * @author xiaanming
  *
  */
 public class PinyinComparator implements Comparator<SortModel> {
