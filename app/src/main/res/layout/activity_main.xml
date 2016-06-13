@@ -1,33 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activity.MainActivity">
 
-    <rxjava.xq.com.pdemo.view.SlidingMenu
-        android:id="@+id/sliding_menu"
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
 
-            <include layout="@layout/left_layout"></include>
+        <rxjava.xq.com.pdemo.view.ImageViewWithTextView
+            android:id="@+id/indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:image_icon="@mipmap/ic_menu_home"
+            app:text="首页"
+            app:text_size="16sp"></rxjava.xq.com.pdemo.view.ImageViewWithTextView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+        <rxjava.xq.com.pdemo.view.ImageViewWithTextView
+            android:id="@+id/indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:image_icon="@mipmap/ic_menu_add"
+            app:text="课程"
+            app:text_size="16sp"></rxjava.xq.com.pdemo.view.ImageViewWithTextView>
 
-                <Button
-                    android:id="@+id/btn_record_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="断点录制视频" />
-            </LinearLayout>
-        </LinearLayout>
-    </rxjava.xq.com.pdemo.view.SlidingMenu>
-</RelativeLayout>
+        <rxjava.xq.com.pdemo.view.ImageViewWithTextView
+            android:id="@+id/indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:image_icon="@mipmap/ic_menu_emoticons"
+            app:text="消息"
+            app:text_size="16sp"></rxjava.xq.com.pdemo.view.ImageViewWithTextView>
+
+    </LinearLayout>
+
+</LinearLayout>

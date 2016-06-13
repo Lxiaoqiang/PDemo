@@ -572,6 +572,7 @@ public class RecordActivity extends AppCompatActivity implements SurfaceHolder.C
         releaseCamera();
         if (cameraPosition == 0) {
             mCamera = Camera.open(1);
+//            mMediaRecorder.setOrientationHint();
             cameraPosition = 1;
         } else {
             mCamera = Camera.open(0);
