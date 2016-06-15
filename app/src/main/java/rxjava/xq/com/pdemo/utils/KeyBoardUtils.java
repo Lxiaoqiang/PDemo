@@ -37,7 +37,6 @@ public class KeyBoardUtils {
     {
         InputMethodManager imm = (InputMethodManager) mContext
                 .getSystemService(Context.INPUT_METHOD_SERVICE);
-
         imm.hideSoftInputFromWindow(mEditText.getWindowToken(), 0);
     }
 }

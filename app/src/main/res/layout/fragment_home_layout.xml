@@ -17,4 +17,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="测试RxJava" />
+    <Button
+        android:id="@+id/btn_constant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系人" />
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择checkbox" />
 </LinearLayout>

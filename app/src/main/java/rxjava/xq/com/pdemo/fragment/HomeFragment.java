@@ -9,9 +9,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.List;
+
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import rxjava.xq.com.pdemo.R;
+import rxjava.xq.com.pdemo.activity.ChioceActivity;
+import rxjava.xq.com.pdemo.activity.ConstantListActivity;
 import rxjava.xq.com.pdemo.activity.RecordActivity;
 import rxjava.xq.com.pdemo.activity.RxJavaTestActivity;
 import rxjava.xq.com.pdemo.utils.L;
@@ -22,7 +26,7 @@ import rxjava.xq.com.pdemo.utils.L;
 public class HomeFragment extends Fragment{
 
     private final String TAG = HomeFragment.class.getSimpleName();
-
+    List<String> list;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -94,5 +98,13 @@ public class HomeFragment extends Fragment{
     @OnClick(R.id.btn_test_rxjava)
     void goTestRxJavaActivity(){
         startActivity(new Intent(getActivity(),RxJavaTestActivity.class));
+    }
+    @OnClick(R.id.btn_constant)
+    void goConstantActivity(){
+        startActivity(new Intent(getActivity(),ConstantListActivity.class));
+    }
+    @OnClick(R.id.btn_check)
+    void goChioceActivity(){
+        startActivity(new Intent(getActivity(),ChioceActivity.class));
     }
 }

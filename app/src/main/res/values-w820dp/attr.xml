@@ -19,8 +19,14 @@
         <enum name="right_bottom" value="3" />
     </attr>
     <attr name="radius" format="dimension" />
-    - <declare-styleable name="ArcMenu">
-    <attr name="position" />
-    <attr name="radius" />
-</declare-styleable>
+
+    <declare-styleable name="ArcMenu">
+        <attr name="position" />
+        <attr name="radius" />
+    </declare-styleable>
+
+    <attr name="itemCount" format="integer" />
+    <declare-styleable name="MyListView">
+        <attr name="itemCount" />
+    </declare-styleable>
 </resources>
